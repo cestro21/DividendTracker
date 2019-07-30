@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="LKt-EG-VV7" id="gO9-AJ-e7L"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Dividend Tracker" id="f33-t9-JEb"/>
+                    <navigationItem key="navigationItem" title="Dividend Tracker" id="f33-t9-JEb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZSy-Me-nfi">
+                            <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="LKt-EG-VV7" id="k3C-W4-Vwh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcR-hu-ZbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
