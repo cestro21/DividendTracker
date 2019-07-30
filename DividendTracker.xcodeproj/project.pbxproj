@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43DC48DC22EFD5760014FB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC48DB22EFD5760014FB51 /* AppDelegate.swift */; };
-		43DC48DE22EFD5760014FB51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC48DD22EFD5760014FB51 /* ViewController.swift */; };
+		43DC48DE22EFD5760014FB51 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC48DD22EFD5760014FB51 /* PortfolioViewController.swift */; };
 		43DC48E122EFD5760014FB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DC48DF22EFD5760014FB51 /* Main.storyboard */; };
 		43DC48E322EFD5770014FB51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DC48E222EFD5770014FB51 /* Assets.xcassets */; };
 		43DC48E622EFD5770014FB51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DC48E422EFD5770014FB51 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		43DC48D822EFD5760014FB51 /* DividendTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DividendTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DC48DB22EFD5760014FB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43DC48DD22EFD5760014FB51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43DC48DD22EFD5760014FB51 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
 		43DC48E022EFD5760014FB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43DC48E222EFD5770014FB51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43DC48E522EFD5770014FB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				43DC48DB22EFD5760014FB51 /* AppDelegate.swift */,
-				43DC48DD22EFD5760014FB51 /* ViewController.swift */,
+				43DC48DD22EFD5760014FB51 /* PortfolioViewController.swift */,
 				43DC48DF22EFD5760014FB51 /* Main.storyboard */,
 				43DC48E222EFD5770014FB51 /* Assets.xcassets */,
 				43DC48E422EFD5770014FB51 /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43DC48DE22EFD5760014FB51 /* ViewController.swift in Sources */,
+				43DC48DE22EFD5760014FB51 /* PortfolioViewController.swift in Sources */,
 				43DC48DC22EFD5760014FB51 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
