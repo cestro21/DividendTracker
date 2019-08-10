@@ -11,10 +11,17 @@ import UIKit
 class PortfolioViewController: UITableViewController {
     
     var itemArray = ["AAPL", "MSFT", "USA"]
+    
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        if let items = defaults.array(forKey: "StockArray") as? [String] {
+            itemArray = items
+        
+        }
+
     }
     
     //MARK - Tableview Datasource Methods
@@ -62,6 +69,9 @@ class PortfolioViewController: UITableViewController {
             // What will happen once the user clicks the add item button on our UI Alert
             
             self.itemArray.append(textField.text!)
+            
+            self.defaults.set(self.itemArray, forKey: "StockArray")
+            
             self.tableView.reloadData()
             
         }
