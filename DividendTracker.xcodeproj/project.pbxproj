@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43437C1322FF91A9003FA883 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43437C1222FF91A9003FA883 /* Item.swift */; };
 		43DC48DC22EFD5760014FB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC48DB22EFD5760014FB51 /* AppDelegate.swift */; };
 		43DC48DE22EFD5760014FB51 /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC48DD22EFD5760014FB51 /* PortfolioViewController.swift */; };
 		43DC48E122EFD5760014FB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DC48DF22EFD5760014FB51 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43437C1222FF91A9003FA883 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		43DC48D822EFD5760014FB51 /* DividendTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DividendTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DC48DB22EFD5760014FB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43DC48DD22EFD5760014FB51 /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43437C1422FF91B6003FA883 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				43437C1222FF91A9003FA883 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		43437C1522FF91BE003FA883 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				43DC48DD22EFD5760014FB51 /* PortfolioViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		43437C1622FF91C6003FA883 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43DC48DF22EFD5760014FB51 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43437C1722FF91DF003FA883 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43DC48E222EFD5770014FB51 /* Assets.xcassets */,
+				43DC48E422EFD5770014FB51 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		43DC48CF22EFD5760014FB51 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				43DC48DB22EFD5760014FB51 /* AppDelegate.swift */,
-				43DC48DD22EFD5760014FB51 /* PortfolioViewController.swift */,
-				43DC48DF22EFD5760014FB51 /* Main.storyboard */,
-				43DC48E222EFD5770014FB51 /* Assets.xcassets */,
-				43DC48E422EFD5770014FB51 /* LaunchScreen.storyboard */,
+				43437C1522FF91BE003FA883 /* Controllers */,
+				43437C1422FF91B6003FA883 /* Data Model */,
+				43437C1622FF91C6003FA883 /* Views */,
+				43437C1722FF91DF003FA883 /* Supporting Files */,
 				43DC48E722EFD5770014FB51 /* Info.plist */,
 			);
 			path = DividendTracker;
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43DC48DE22EFD5760014FB51 /* PortfolioViewController.swift in Sources */,
+				43437C1322FF91A9003FA883 /* Item.swift in Sources */,
 				43DC48DC22EFD5760014FB51 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
