@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dividend Tracker-->
+        <!--Stocks-->
         <scene sceneID="Pyy-Kx-uDQ">
             <objects>
                 <tableViewController id="LKt-EG-VV7" customClass="PortfolioViewController" customModule="DividendTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,9 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="R0L-9R-FbP">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="LKt-EG-VV7" id="Asv-5l-LRX"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PortfolioItemCell" id="XoP-VA-jeW">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XoP-VA-jeW" id="vlu-x2-5Yi">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -32,7 +40,7 @@
                             <outlet property="delegate" destination="LKt-EG-VV7" id="gO9-AJ-e7L"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Dividend Tracker" id="f33-t9-JEb">
+                    <navigationItem key="navigationItem" title="Stocks" id="f33-t9-JEb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZSy-Me-nfi">
                             <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -43,7 +51,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcR-hu-ZbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808.6956521739132" y="115.84821428571428"/>
+            <point key="canvasLocation" x="2309" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gXP-CY-7Cd">
@@ -60,12 +68,51 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="LKt-EG-VV7" kind="relationship" relationship="rootViewController" id="anL-1O-G2F"/>
+                        <segue destination="C8p-zO-RYs" kind="relationship" relationship="rootViewController" id="Zfd-ud-PNx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mw-fI-82X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="898.55072463768124" y="115.84821428571428"/>
+        </scene>
+        <!--Perfect Portfolios-->
+        <scene sceneID="ha8-Ye-lzR">
+            <objects>
+                <tableViewController id="C8p-zO-RYs" customClass="CategoryTableViewController" customModule="DividendTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BSI-fm-EhL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="K7z-3X-uK9">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K7z-3X-uK9" id="2CG-xz-X2l">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="C8p-zO-RYs" id="NnE-NW-uXR"/>
+                            <outlet property="delegate" destination="C8p-zO-RYs" id="qK1-r3-R9Y"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Perfect Portfolios" id="h1k-tj-0I3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dWM-l9-GO1">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="C8p-zO-RYs" id="cih-54-Xfl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="LKt-EG-VV7" kind="show" identifier="goToItems" id="tk1-GK-kOy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C6M-ZJ-wnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1612" y="116"/>
         </scene>
     </scenes>
 </document>
